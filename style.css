@@ -1,0 +1,1376 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.85);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  background-color: #fff;
+  font-feature-settings: "tnum", "tnum";
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+#bd {
+  min-width: 1519px;
+}
+
+.main {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main video {
+  min-width: 100%;
+  min-height: 90%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.header {
+  width: 100%;
+  height: 10%;
+  line-height: 10%;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+}
+
+.maintext {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  bottom: 0;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+.logo img {
+  width: 170px;
+  height: 47.58px;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+.nav ul li {
+  margin: 15px;
+}
+.nav ul li a {
+  font-size: 17px;
+  color: #fff;
+  line-height: 35px;
+  height: 47.58px;
+}
+.showcase {
+  position: absolute;
+  top: 74px;
+  min-width: 700px;
+  height: 300px;
+  text-align: center;
+  margin-top: 200px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.showcase .yaoqinghan {
+  font-size: 30px;
+}
+
+.showcase .youxiu {
+  font-size: 50px;
+}
+
+.showcase .mainTitle-subtitle {
+  width: 80%;
+  letter-spacing: 23px;
+  text-indent: 23px;
+  font-size: 14px;
+  line-height: 17px;
+  opacity: 0.8;
+  margin: 14px auto 0;
+  position: relative;
+}
+.showcase .mainTitle-subtitle:after {
+  content: "";
+  display: block;
+  width: 74px;
+  height: 2px;
+  position: absolute;
+  top: calc(50% - 1px);
+  background-image: linear-gradient(
+    270deg,
+    hsla(0, 0%, 100%, 0),
+    #fff 47%,
+    hsla(0, 0%, 100%, 0)
+  );
+}
+.showcase.mainTitle-subtitle:before {
+  left: 0;
+}
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+.showcase.mainTitle-subtitle:after {
+  right: 0;
+}
+.showcase .mainTitle-subtitle:before {
+  content: "";
+  display: block;
+  width: 74px;
+  height: 2px;
+  position: absolute;
+  top: calc(50% - 1px);
+  background-image: linear-gradient(
+    270deg,
+    hsla(0, 0%, 100%, 0),
+    #fff 47%,
+    hsla(0, 0%, 100%, 0)
+  );
+}
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+.join {
+  display: inline-block;
+  width: 94px;
+  height: 38px;
+  line-height: 35px;
+  margin-top: 30px;
+  border-radius: 40px;
+  position: relative;
+  border: 1px solid transparent;
+}
+.joinbtn {
+  display: inline-block;
+  background-color: white;
+  color: black;
+  font-weight: 400;
+  height: 38px;
+  width: 94px;
+  border: 1px solid transparent;
+  border-radius: 40px;
+  line-height: 30px;
+  margin-top: 100px;
+}
+
+.joinbtn:hover {
+  color: skyblue;
+  border: 1px solid skyblue;
+}
+.arrow {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 2%;
+  left: 773px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-left: -1%;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.arrow a img {
+  position: absolute;
+  left: 18%;
+
+  animation-name: upAndDown;
+  /*动画名称*/
+  animation-duration: 0.5s;
+  /*设置秒数*/
+  animation-timing-function: linear;
+  /*速度曲线*/
+  animation-iteration-count: infinite;
+  /*播放次数*/
+  animation-direction: alternate;
+  /*逆向播放*/
+  animation-play-state: running;
+  /*正在运行*/
+}
+
+@keyframes upAndDown {
+  0% {
+    bottom: 10%;
+  }
+
+  100% {
+    bottom: 15%;
+  }
+}
+
+
+@keyframes afterFly1 {
+  0% {
+    left: 9%;
+    top: 26%;
+  }
+
+  100% {
+    left: 9%;
+    top: 29%;
+  }
+}
+.afterFly1 {
+  position: absolute;
+  left: 9%;
+  top: 26%;
+  height: 40px;
+  padding: 3px 6px;
+  width: fit-content;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  background-color: #f2f2f2;
+  color: #000;
+  border-radius: 10px;
+  animation-name: afterFly1;
+  /*动画名称*/
+  animation-duration: 0.5s;
+  /*设置秒数*/
+  animation-timing-function: linear;
+  /*速度曲线*/
+  animation-iteration-count: infinite;
+  /*播放次数*/
+  animation-direction: alternate;
+  /*逆向播放*/
+  animation-play-state: running;
+  /*正在运行*/
+}
+@keyframes afterFly2 {
+  0% {
+    left: 33%;
+    top: 35%;
+  }
+
+  100% {
+    left: 33%;
+  top: 38%;
+  }
+}
+.afterFly2 {
+  position: absolute;
+  left: 33%;
+  top: 35%;
+  height: 40px;
+  padding: 3px 6px;
+  width: fit-content;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  background-color: #f2f2f2;
+  color: #000;
+  border-radius: 10px;
+  animation-name: afterFly2;
+  /*动画名称*/
+  animation-duration: 0.5s;
+  /*设置秒数*/
+  animation-timing-function: linear;
+  /*速度曲线*/
+  animation-iteration-count: infinite;
+  /*播放次数*/
+  animation-direction: alternate;
+  /*逆向播放*/
+  animation-play-state: running;
+  /*正在运行*/
+}
+@keyframes afterFly3 {
+  0% {
+    left: 57%;
+    top: 28%;
+  }
+
+  100% {
+    left: 57%;
+  top: 31%;
+  }
+}
+.afterFly3 {
+  position: absolute;
+  left: 57%;
+  top: 28%;
+  height: 40px;
+  padding: 3px 6px;
+  width: fit-content;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  background-color: #f2f2f2;
+  color: #000;
+  border-radius: 10px;
+  animation-name: afterFly3;
+  /*动画名称*/
+  animation-duration: 0.5s;
+  /*设置秒数*/
+  animation-timing-function: linear;
+  /*速度曲线*/
+  animation-iteration-count: infinite;
+  /*播放次数*/
+  animation-direction: alternate;
+  /*逆向播放*/
+  animation-play-state: running;
+  /*正在运行*/
+}
+@keyframes afterFly4 {
+  0% {
+    left: 85%;
+    top: 30%;
+  }
+
+  100% {
+    left: 85%;
+    top: 33%;
+  }
+}
+.afterFly4 {
+  position: absolute;
+  left: 85%;
+  top: 30%;
+  height: 40px;
+  padding: 3px 6px;
+  width: fit-content;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  background-color: #f2f2f2;
+  color: #000;
+  border-radius: 10px;
+  animation-name: afterFly4;
+  /*动画名称*/
+  animation-duration: 0.5s;
+  /*设置秒数*/
+  animation-timing-function: linear;
+  /*速度曲线*/
+  animation-iteration-count: infinite;
+  /*播放次数*/
+  animation-direction: alternate;
+  /*逆向播放*/
+  animation-play-state: running;
+  /*正在运行*/
+}
+@keyframes afterFly5 {
+  0% {
+    left: 3%;
+    top: 72%;
+  }
+
+  100% {
+    left: 3%;
+    top: 75%;
+  }
+}
+.afterFly5{
+  position: absolute;
+  left: 3%;
+  top: 72%;
+  height: 40px;
+  padding: 3px 6px;
+  width: fit-content;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  background-color: #f2f2f2;
+  color: #000;
+  border-radius: 10px;
+  animation-name: afterFly5;
+  /*动画名称*/
+  animation-duration: 0.5s;
+  /*设置秒数*/
+  animation-timing-function: linear;
+  /*速度曲线*/
+  animation-iteration-count: infinite;
+  /*播放次数*/
+  animation-direction: alternate;
+  /*逆向播放*/
+  animation-play-state: running;
+  /*正在运行*/
+}
+@keyframes afterFly6 {
+  0% {
+    left: 37%;
+  top: 70%;
+  }
+
+  100% {
+    left: 37%;
+  top: 73%;
+  }
+}
+.afterFly6 {
+  position: absolute;
+  left: 37%;
+  top: 70%;
+  height: 40px;
+  padding: 3px 6px;
+  width: fit-content;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  background-color: #f2f2f2;
+  color: #000;
+  border-radius: 10px;
+  animation-name: afterFly6;
+  /*动画名称*/
+  animation-duration: 0.5s;
+  /*设置秒数*/
+  animation-timing-function: linear;
+  /*速度曲线*/
+  animation-iteration-count: infinite;
+  /*播放次数*/
+  animation-direction: alternate;
+  /*逆向播放*/
+  animation-play-state: running;
+  /*正在运行*/
+}
+@keyframes afterFly7 {
+  0% {
+    left: 64%;
+    top: 57%;
+  }
+
+  100% {
+    left: 64%;
+    top: 60%;
+  }
+}
+.afterFly7{
+  position: absolute;
+  left: 64%;
+  top: 57%;
+  height: 40px;
+  padding: 3px 6px;
+  width: fit-content;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  background-color: #f2f2f2;
+  color: #000;
+  border-radius: 10px;
+  animation-name: afterFly7;
+  /*动画名称*/
+  animation-duration: 0.5s;
+  /*设置秒数*/
+  animation-timing-function: linear;
+  /*速度曲线*/
+  animation-iteration-count: infinite;
+  /*播放次数*/
+  animation-direction: alternate;
+  /*逆向播放*/
+  animation-play-state: running;
+  /*正在运行*/
+}
+@keyframes afterFly8 {
+  0% {
+    left: 84%;
+  top: 72%;
+  }
+
+  100% {
+    left: 84%;
+  top: 75%;
+  }
+}
+.afterFly8 {
+  position: absolute;
+  left: 84%;
+  top: 72%;
+  height: 40px;
+  padding: 3px 6px;
+  width: fit-content;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  background-color: #f2f2f2;
+  color: #000;
+  border-radius: 10px;
+  animation-name: afterFly8;
+  /*动画名称*/
+  animation-duration: 0.5s;
+  /*设置秒数*/
+  animation-timing-function: linear;
+  /*速度曲线*/
+  animation-iteration-count: infinite;
+  /*播放次数*/
+  animation-direction: alternate;
+  /*逆向播放*/
+  animation-play-state: running;
+  /*正在运行*/
+}
+
+.xuxian {
+  position: absolute;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-left: 1px dashed white;
+  text-align: center;
+  margin-left: 28px;
+  bottom: 0%;
+}
+
+#guanYuWoMen {
+  background-color: #fff;
+  /* width: 100%; */
+  height: 721px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fadeInLeft {
+  animation-name: fadeInLeft;
+  -webkit-animation-name: fadeInLeft;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+}
+@keyframes flyToLeft {
+  0% {
+    right: -666px;
+    bottom: -666px;
+  }
+  100% {
+    right: 0px;
+    bottom: 0px;
+  }
+}
+.flyToLeft {
+  animation-name: flyToLeft;
+  -webkit-animation-name: flyToLeft;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+}
+@keyframes flyToRight {
+  0% {
+    left: -666px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+.flyToRight {
+  animation-name: flyToRight;
+  -webkit-animation-name: flyToRight;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+}
+@keyframes flyToBottom {
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+.flyToBottom {
+  animation-name: flyToBottom;
+  -webkit-animation-name: flyToBottom;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+}
+@keyframes flyToTop {
+  0% {
+    bottom: -200px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+.flyToTop {
+  animation-name: flyToTop;
+  -webkit-animation-name: flyToTop;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+}
+
+@keyframes flyToAround1 {
+  0% {
+    top: 90%;
+    left: 43%;
+  }
+  100% {
+    left: 9%;
+    top: 26%;
+  }
+}
+.flyToAround1 {
+  position: absolute;
+  left: 9%;
+  top: 26%;
+  height: 40px;
+  padding: 3px 6px;
+  width: fit-content;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  background-color: #f2f2f2;
+  color: #000;
+  border-radius: 10px;
+
+  animation-name: flyToAround1;
+  -webkit-animation-name: flyToAround1;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-iteration-count:1;/*动画只执行一次*/
+}
+@keyframes flyToAround2 {
+  0% {
+    top: 90%;
+    left: 43%;
+  }
+  100% {
+    left: 33%;
+    top: 35%;
+  }
+}
+.flyToAround2 {
+  position: absolute;
+  left: 33%;
+  top: 35%;
+  height: 40px;
+  padding: 3px 6px;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  background-color: #f2f2f2;
+  color: #000;
+  border-radius: 10px;
+  width: fit-content;
+  animation-name: flyToAround2;
+  -webkit-animation-name: flyToAround2;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-iteration-count:1;/*动画只执行一次*/
+}
+@keyframes flyToAround3 {
+  0% {
+    top: 90%;
+    left: 43%;
+  }
+  100% {
+    left: 57%;
+    top: 28%;
+  }
+}
+.flyToAround3 {
+  position: absolute;
+  left: 57%;
+  top: 28%;
+  height: 40px;
+  padding: 3px 6px;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  background-color: #f2f2f2;
+  color: #000;
+  border-radius: 10px;
+  width: fit-content;
+  animation-name: flyToAround3;
+  -webkit-animation-name: flyToAround3;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-iteration-count:1;/*动画只执行一次*/
+}
+@keyframes flyToAround4 {
+  0% {
+    top: 90%;
+    left: 43%;
+  }
+  100% {
+    left: 85%;
+    top: 30%;
+  }
+}
+.flyToAround4 {
+  position: absolute;
+  left: 85%;
+  top: 30%;
+  height: 40px;
+  padding: 3px 6px;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  background-color: #f2f2f2;
+  color: #000;
+  border-radius: 10px;
+  width: fit-content;
+  animation-name: flyToAround4;
+  -webkit-animation-name: flyToAround4;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-iteration-count:1;/*动画只执行一次*/
+}
+@keyframes flyToAround5 {
+  0% {
+    top: 90%;
+    left: 43%;
+  }
+  100% {
+    left: 3%;
+    top: 72%;
+  }
+}
+.flyToAround5 {
+  position: absolute;
+  left: 3%;
+  top: 72%;
+  height: 40px;
+  padding: 3px 6px;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  background-color: #f2f2f2;
+  color: #000;
+  border-radius: 10px;
+  width: fit-content;
+  animation-iteration-count:1;/*动画只执行一次*/
+  animation-name: flyToAround5;
+  -webkit-animation-name: flyToAround5;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+}
+@keyframes flyToAround6 {
+  0% {
+    top: 90%;
+    left: 43%;
+  }
+  100% {
+    left: 37%;
+    top: 70%;
+  }
+}
+.flyToAround6 {
+  position: absolute;
+  left: 37%;
+  top: 70%;
+  height: 40px;
+  padding: 3px 6px;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  background-color: #f2f2f2;
+  color: #000;
+  border-radius: 10px;
+  width: fit-content;
+  animation-name: flyToAround6;
+  -webkit-animation-name: flyToAround6;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-iteration-count:1;/*动画只执行一次*/
+}
+@keyframes flyToAround7 {
+  0% {
+    top: 90%;
+    left: 43%;
+  }
+  100% {
+    left: 64%;
+    top: 57%;
+  }
+}
+.flyToAround7 {
+  position: absolute;
+  left: 64%;
+  top: 57%;
+  height: 40px;
+  padding: 3px 6px;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  background-color: #f2f2f2;
+  color: #000;
+  border-radius: 10px;
+  width: fit-content;
+  animation-name: flyToAround7;
+  -webkit-animation-name: flyToAround7;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-iteration-count:1;/*动画只执行一次*/
+}
+@keyframes flyToAround8 {
+  0% {
+    top: 90%;
+    left: 43%;
+  }
+  100% {
+    left: 84%;
+    top: 72%;
+  }
+}
+.flyToAround8 {
+  position: absolute;
+  left: 84%;
+  top: 72%;
+  height: 40px;
+  padding: 3px 6px;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  background-color: #f2f2f2;
+  color: #000;
+  border-radius: 10px;
+  width: fit-content;
+  animation-name: flyToAround8;
+  -webkit-animation-name: flyToAround8;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-iteration-count:1;/*动画只执行一次*/
+}
+#biaoQian1{
+  position: absolute;
+  left: 9%;
+  top: 26%;
+  height: 40px;
+  padding: 3px 6px;
+  width: fit-content;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  background-color: #f2f2f2;
+  color: #000;
+  border-radius: 10px;
+
+}
+#biaoQian2{
+  position: absolute;
+  left: 33%;
+  top: 35%;
+  height: 40px;
+  padding: 3px 6px;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  background-color: #f2f2f2;
+  color: #000;
+  border-radius: 10px;
+  width: fit-content;
+}
+#biaoQian3{
+  position: absolute;
+  left: 57%;
+  top: 28%;
+  height: 40px;
+  padding: 3px 6px;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  background-color: #f2f2f2;
+  color: #000;
+  border-radius: 10px;
+  width: fit-content;
+}
+#biaoQian4{
+  position: absolute;
+  left: 85%;
+  top: 30%;
+  height: 40px;
+  padding: 3px 6px;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  background-color: #f2f2f2;
+  color: #000;
+  border-radius: 10px;
+  width: fit-content;
+}
+#biaoQian5{
+  position: absolute;
+  left: 3%;
+  top: 72%;
+  height: 40px;
+  padding: 3px 6px;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  background-color: #f2f2f2;
+  color: #000;
+  border-radius: 10px;
+  width: fit-content;
+}
+#biaoQian6{
+  position: absolute;
+  left: 37%;
+  top: 70%;
+  height: 40px;
+  padding: 3px 6px;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  background-color: #f2f2f2;
+  color: #000;
+  border-radius: 10px;
+  width: fit-content;
+}
+#biaoQian7{
+  position: absolute;
+  left: 64%;
+  top: 57%;
+  height: 40px;
+  padding: 3px 6px;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  background-color: #f2f2f2;
+  color: #000;
+  border-radius: 10px;
+  width: fit-content;
+}
+#biaoQian8{
+  position: absolute;
+  left: 84%;
+  top: 72%;
+  height: 40px;
+  padding: 3px 6px;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  background-color: #f2f2f2;
+  color: #000;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.content1 {
+  width: 680px;
+  height: 600px;
+  background: #fff;
+  margin-right: 30px;
+}
+.content2 {
+  width: 650px;
+  height: 600px;
+  background-color: #f2f2f2;
+  border: 1px, solid, transparent;
+  border-radius: 50px;
+  margin-left: 30px;
+  overflow: hidden;
+}
+#text1 {
+  width: 680px;
+  height: 400px;
+  background-color: #f2f2f2;
+  border: 1px, solid, transparent;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.img1 {
+  margin-top: -31px;
+  position: relative;
+}
+#guan {
+  font-size: 35px;
+  font-weight: 400;
+  text-align: left;
+  padding: 40px;
+  margin-left: 10px;
+}
+#we {
+  font-size: 20px;
+  line-height: 40px;
+  color: #000;
+  font-family: "STKaiti";
+  width: 680px;
+  text-align: left;
+  margin-left: 41px;
+  margin-top: -24px;
+}
+#text2 {
+  width: 680px;
+  font-size: 20px;
+  line-height: 40px;
+  color: #000;
+  font-family: "STKaiti";
+  width: 680px;
+  text-align: left;
+  margin-left: 68px;
+  margin-top: 38px;
+}
+
+#hezhao {
+  width: 530px;
+  height: 377.8px;
+  border: 1px solid transparent;
+  border-radius: 10%;
+  background-color: #535353;
+  padding-left: 36px;
+  padding-top: 44px;
+  margin-top: 101px;
+  margin-left: 184px;
+  position: relative;
+}
+
+.grayBackground{
+  position: absolute;
+ width: 470px;
+ height: 313px;
+ border-radius: 10%;
+ background-color:#000;
+ z-index: 8;
+ left: 21PX;
+ top: 21PX;
+ opacity: 0;
+ padding: 111px;
+ font-size: 5;
+ color:white;
+}
+.grayBackground:hover{
+  opacity: 0.6;
+}
+
+#p2 {
+  position: absolute;
+  width: 470px;
+  height: 313px;
+  border: 1px solid transparent;
+  border-radius: 10%;
+  right: 38px;
+  top: 20px;
+}
+
+#XiangMu {
+  height: 721px;
+  background-color: #fff;
+  margin-top: 100px;
+  text-align: center;
+  width: 1100px;
+  margin: auto;
+}
+
+.bumenjieshao {
+  text-align: right;
+  font-size: 36px;
+  padding: 54px;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+#XiangmuShow {
+  position: relative;
+  width: 1100px;
+  height: 450px;
+  margin: auto;
+  overflow: hidden;
+}
+
+#XiangmuShow ul {
+  display: flex;
+  align-items: center;
+  width: 1100px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+}
+
+#XiangmuShow ul li {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+#circle a:hover {
+  background-color: black;
+}
+
+.bumen {
+  font-size: 55px;
+}
+
+.jieshao {
+  font-size: 30px;
+  margin-top: 22px;
+  margin-left: 32px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+#circle {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  margin-top: 30px;
+}
+
+#circle a {
+  width: 30px;
+  height: 10px;
+  border: 1px solid transparent;
+  background-color: #cbcbcb;
+  border-radius: 20px;
+  margin-left: 8px;
+}
+
+#yunying {
+  
+  width: 1350px;
+  height: 630px;
+  margin: 100px auto -50px;
+}
+#yunying-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+#erpxitong {
+  width: 400px;
+  height: 100%;
+  background-color: #bfa;
+  background: linear-gradient(270deg, #c9dae7, #ebeff9);
+  border: 1px solid transparent;
+  border-radius: 30px;
+  position: relative;
+}
+#chanpinjieshao {
+  width: 880px;
+  height: 630px;
+  background-color: white;
+  position: relative;
+}
+#jieshaotop {
+  width: 100%;
+  height: 220px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.jieshaohead {
+  width: 280px;
+  height: 1005;
+  font-size: 40px;
+  font-weight: 600;
+  background-color: #f2f2f2;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  padding: 60px 20px;
+}
+
+.jieshaotext {
+  width: 540px;
+  height: 100%;
+  font-size: 20px;
+  margin-left: 0px;
+  border-radius: 30px;
+  padding: 20px 40px;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+#jieshaobottom {
+  width: 100%;
+  height: 200px;
+  border-radius: 30px;
+  padding: 15px 38px;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #f1f2d0, #b1d8b4);
+  margin-top: 39px;
+  position: relative;
+}
+.erpbiaoti {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.ketang {
+  font-size: 23px;
+  font-weight: 550;
+  color: #6593a8;
+  margin-top: -10px;
+}
+.erptext {
+  margin-top: 20px;
+  font-size: 17px;
+}
+.youwenhead {
+  font-size: 30px;
+  font-weight: 600;
+}
+.youwenplace {
+  font-size: 23px;
+  font-weight: 550;
+  color: #6a9b71;
+  margin-top: -10px;
+}
+
+.youwentext {
+  margin-top: 15px;
+  font-size: 17px;
+}
+
+.youxiuxuezhang {
+  width: 100%;
+  height: 721px;
+  background-color: #fff;
+}
+
+.chengyuandongtai {
+  font-size: 30px;
+}
+
+.xuezhangcaifang {
+  width: 100%;
+  height: 510px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.caifanghead {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.caifangleft video {
+  height: 338px;
+  width: 600px;
+  z-index: -1;
+  border-radius: 10px;
+  margin-right: 30px;
+}
+.caifangright {
+  width: 700px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.baomingliucheng {
+  display: flex;
+  justify-content: center;
+}
+.iconfont {
+  margin-left: 50px;
+  margin-top: 78px;
+  margin-right: 50px;
+}
+.liuchenghead {
+  font-size: 25px;
+}
+.time {
+  font-size: 20px;
+}
+.gaibianshijie {
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+.btn3 ul li {
+  background-color: #d6edee;
+  border-radius: 10px;
+  padding: 5px 6px;
+  text-align: center;
+  font-size: 19px;
+  margin-left: 100px;
+}
+.btn3 ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: -30px;
+}
+.btn3 ul li a {
+  color: #000;
+}
+.jiaru {
+  margin-top: 30px;
+}
+#xuanchuan {
+  margin-top: 100px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#footer {
+  width: 1530px;
+  height: 190px;
+  background-color: #f2f2f2;
+  padding-top: 30px;
+  margin-top: 30px;
+  margin: 30px auto 0px;
+}
+
+.footerwrap {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.footerup {
+  display: flex;
+  justify-content: space-around;
+  font-size: 13px;
+}
+
+.footerhead {
+  font-size: 19px;
+}
+
+.yaoqingdaolai {
+  font-size: 27px;
+}
+.shixian {
+  border-left: 1px solid black;
+  height: 110px;
+}
+.jiantou {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  border: 1px solid white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  animation-name: upAndDown;
+  /*动画名称*/
+  animation-duration: 0.5s;
+  /*设置秒数*/
+  animation-timing-function: linear;
+  /*速度曲线*/
+  animation-iteration-count: infinite;
+  /*播放次数*/
+  animation-direction: alternate;
+  /*逆向播放*/
+  animation-play-state: running;
+  /*正在运行*/
+}
